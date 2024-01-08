@@ -1,3 +1,5 @@
+#include "libft.h"
+
 void *ft_memset(void *s, int c, unsigned long n)
 {
 	unsigned long	index;
@@ -14,7 +16,6 @@ void *ft_memset(void *s, int c, unsigned long n)
 
 
 #include <string.h>
-#include <stdlib.h>
 #include <stdio.h>
 int main()
 {

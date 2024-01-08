@@ -1,18 +1,19 @@
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_calloc(unsigned long n, unsigned long size)
 {
 	void			*mem;
 	unsigned long	i;
 	mem = malloc(n * size);
-	i = 0;
+	ft_bzero(mem, n);
 
-	while (i < n)
-	{
-		((int*)mem)[i] = 0;
-		i++;
-	}
+	// i = 0;
 
+	// while (i < n)
+	// {
+	// 	((int*)mem)[i] = 0;
+	// 	i++;
+	// }
 	return (mem);
 }
 
