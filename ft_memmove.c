@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:43:55 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/09 14:40:21 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/09 15:24:53 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,20 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t	i;
-	char	*t;
+	char	*s;
+	char	*d;
 
-	i = 0;
-	ft_memcpy(dest, src, n);
-	ft_bzero((char *)src, n);
+	s = (char *)src;
+	d = (char *)dest;
+	if (d > s)
+	{
+		while (n--)
+			d[n] = s[n];
+	}
+	else
+	{
+		ft_memcpy(dest, src, n);
+	}
 	return (dest);
 }
 
