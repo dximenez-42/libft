@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/01/09 13:43:50 by dximenez          #+#    #+#             */
+/*   Updated: 2024/01/09 13:52:03 by dximenez         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isprint(int c)
@@ -8,6 +20,7 @@ int	ft_isprint(int c)
 		return (0);
 }
 
+/*
 #include <stdio.h>
 #include <ctype.h>
 int main()
@@ -16,7 +29,9 @@ int main()
 	int i = 0;
 	while (string[i] != '\0')
 	{
-		printf("%c > %d %d\n", string[i], isprint(string[i]), ft_isprint(string[i]));
+		printf("%c > %d %d\n", string[i],
+			isprint(string[i]), ft_isprint(string[i]));
 		i++;
 	}
 }
+*/

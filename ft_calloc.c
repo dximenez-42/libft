@@ -1,22 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/01/09 13:43:32 by dximenez          #+#    #+#             */
+/*   Updated: 2024/01/09 13:54:46 by dximenez         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_calloc(unsigned long n, unsigned long size)
 {
 	void			*mem;
 	unsigned long	i;
+
 	mem = malloc(n * size);
 	ft_bzero(mem, n);
-
-	// i = 0;
-
-	// while (i < n)
-	// {
-	// 	((int*)mem)[i] = 0;
-	// 	i++;
-	// }
 	return (mem);
 }
 
+/*
 #include <stdio.h>
 int main()
 {
@@ -28,3 +34,4 @@ int main()
 	printf("%d\n", num[3]);
 	printf("%d\n", num[4]);
 }
+*/

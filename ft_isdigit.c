@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dximenez <dximenez@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 19:37:33 by dximenez          #+#    #+#             */
-/*   Updated: 2023/12/21 19:43:59 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/09 13:49:27 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isdigit(unsigned char c)
@@ -28,7 +29,8 @@ int main()
 	int i = 0;
 	while (string[i] != '\0')
 	{
-		printf("%c > %d %d\n", string[i], isdigit(string[i]), ft_isdigit(string[i]));
+		printf("%c > %d %d\n", string[i],
+			isdigit(string[i]), ft_isdigit(string[i]));
 		i++;
 	}
 }

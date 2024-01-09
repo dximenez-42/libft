@@ -1,6 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/01/09 13:42:26 by dximenez          #+#    #+#             */
+/*   Updated: 2024/01/09 13:55:22 by dximenez         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 static int	is_space(char c)
 {
-	if (c == ' ' || c == '\t' || c == '\n' || c == '\v' || c == '\f' || c == '\r')
+	if (c == ' ' || c == '\t' || c == '\n'
+		|| c == '\v' || c == '\f' || c == '\r')
 		return (1);
 	else
 		return (0);
@@ -28,10 +41,10 @@ int	ft_atoi(const char *s)
 		v = (v * 10) + (s[i] - '0');
 		i++;
 	}
-
 	return (sy * v);
 }
 
+/*
 #include <stdio.h>
 #include <stdlib.h>
 int main()
@@ -53,3 +66,4 @@ int main()
 	// printf("%d = 42\n", ft_atoi("+42"));
 	// printf("%d = 0\n", ft_atoi("++42"));
 }
+*/

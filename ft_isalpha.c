@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dximenez <dximenez@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 16:30:32 by dximenez          #+#    #+#             */
-/*   Updated: 2023/12/21 17:55:31 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/09 13:52:19 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isalpha(unsigned char c)
@@ -28,7 +29,8 @@ int main()
 	int i = 0;
 	while (string[i] != '\0')
 	{
-		printf("%c > %d %d\n", string[i], isalpha(string[i]), ft_isalpha(string[i]));
+		printf("%c > %d %d\n", string[i],
+			isalpha(string[i]), ft_isalpha(string[i]));
 		i++;
 	}
 }

@@ -1,31 +1,43 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/01/09 13:55:59 by dximenez          #+#    #+#             */
+/*   Updated: 2024/01/09 13:57:28 by dximenez         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <stddef.h>
+# include <stdlib.h>
+# include <stdio.h>
+# include <unistd.h>
+# include <stddef.h>
 
-int	ft_isalpha(unsigned char c);
-int	ft_isdigit(unsigned char c);
-int	ft_isalnum(int c);
-int	ft_isascii(int c);
-int	ft_isprint(int c);
+int				ft_isalpha(unsigned char c);
+int				ft_isdigit(unsigned char c);
+int				ft_isalnum(int c);
+int				ft_isascii(int c);
+int				ft_isprint(int c);
 unsigned long	ft_strlen(const char *s);
-void	*ft_memset(void *s, int c, unsigned long n);
-void	ft_bzero(void *s, unsigned long n);
-void	*ft_memcpy(void *dest, const void *src, unsigned long n);
+void			*ft_memset(void *s, int c, unsigned long n);
+void			ft_bzero(void *s, unsigned long n);
+void			*ft_memcpy(void *dest, const void *src, unsigned long n);
 //memmove
 //strlcpy
 //strlcat
-int	ft_toupper(int c);
-int	ft_tolower(int c);
+int				ft_toupper(int c);
+int				ft_tolower(int c);
 //strchr
 //strncmp
 //memchr
 //memcmp
 //strnstr
-int	ft_atoi(const char *s)
+int				ft_atoi(const char *s);
 // void	*ft_calloc(unsigned long n, unsigned long size);
 // char	*ft_strdup(const char *s);
 // char	*ft_substr(char const *s, unsigned int start, size_t len);

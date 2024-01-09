@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/01/09 13:43:43 by dximenez          #+#    #+#             */
+/*   Updated: 2024/01/09 13:51:14 by dximenez         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isascii(int c)
@@ -8,15 +20,19 @@ int	ft_isascii(int c)
 		return (0);
 }
 
+/*
 #include <stdio.h>
 #include <ctype.h>
 int main()
 {
-	char string[] = "0123456789ABCdefGHIjklMNOpqrSTUvwxYZ!@#$%^&*()_+{}[]ñáéíóúñàèìòù";
+	char string[] = "0123456789ABCdefGHIjklMNOpqr
+		STUvwxYZ!@#$%^&*()_+{}[]ñáéíóúñàèìòù";
 	int i = 0;
 	while (string[i] != '\0')
 	{
-		printf("%c > %d %d\n", string[i], isascii(string[i]), ft_isascii(string[i]));
+		printf("%c > %d %d\n", string[i],
+			isascii(string[i]), ft_isascii(string[i]));
 		i++;
 	}
 }
+*/
