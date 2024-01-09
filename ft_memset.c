@@ -6,15 +6,15 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:43:57 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/09 13:52:45 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/09 14:35:56 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, unsigned long n)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned long	index;
+	size_t	index;
 
 	index = 0;
 	while (index < n)

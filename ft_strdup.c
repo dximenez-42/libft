@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:43:59 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/09 13:55:02 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/09 14:40:33 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strdup(const char *s)
 {
-	char			*mem;
-	unsigned long	i;
+	char	*mem;
+	size_t	i;
 
 	mem = malloc(sizeof(s));
 	i = 0;

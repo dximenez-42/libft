@@ -6,16 +6,16 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:43:55 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/09 13:53:33 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/09 14:40:21 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, unsigned long n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned long	i;
-	char			*t;
+	size_t	i;
+	char	*t;
 
 	i = 0;
 	ft_memcpy(dest, src, n);

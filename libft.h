@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:55:59 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/09 13:57:28 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/09 14:40:09 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,27 +18,27 @@
 # include <unistd.h>
 # include <stddef.h>
 
-int				ft_isalpha(unsigned char c);
-int				ft_isdigit(unsigned char c);
-int				ft_isalnum(int c);
-int				ft_isascii(int c);
-int				ft_isprint(int c);
-unsigned long	ft_strlen(const char *s);
-void			*ft_memset(void *s, int c, unsigned long n);
-void			ft_bzero(void *s, unsigned long n);
-void			*ft_memcpy(void *dest, const void *src, unsigned long n);
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
+size_t	ft_strlen(const char *s);
+void	*ft_memset(void *s, int c, size_t n);
+void	ft_bzero(void *s, size_t n);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
 //memmove
 //strlcpy
 //strlcat
-int				ft_toupper(int c);
-int				ft_tolower(int c);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
 //strchr
 //strncmp
 //memchr
 //memcmp
 //strnstr
-int				ft_atoi(const char *s);
-// void	*ft_calloc(unsigned long n, unsigned long size);
+int		ft_atoi(const char *s);
+// void	*ft_calloc(size_t n, size_t size);
 // char	*ft_strdup(const char *s);
 // char	*ft_substr(char const *s, unsigned int start, size_t len);
 // char	*ft_strjoin(char const *s1, char const *s2);
