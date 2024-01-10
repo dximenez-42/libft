@@ -17,7 +17,9 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 	size_t	i;
 
 	i = 0;
-	while (src[i] != '\0' && i < n - 1)
+	if(n == 0)
+		return (ft_strlen(src));
+	while (src[i] != '\0' && i < (n - 1))
 	{
 		dest[i] = src[i];
 		i++;
@@ -31,7 +33,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 int main()
 {
 	char *str1 = "hola";
-	int num = 5;
+	int num = 2;
 
 	char str2[5];
 	char str3[5];
@@ -41,6 +43,8 @@ int main()
 
 	printf("m%zu %s\n", res1, str2);
 	printf("n%zu %s\n", res2, str3);
-	printf("diff %d\n", strcmp(str2, str3));
+	if(!memcmp(str2, str3, 20))
+		return printf("OK");
+	return printf("KO");
 }
 */
