@@ -6,13 +6,14 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:55:59 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/11 14:04:25 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/11 18:00:39 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <string.h>
 # include <stdlib.h>
 # include <stdio.h>
 # include <unistd.h>
@@ -33,7 +34,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
-//strncmp
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 //memchr
 //memcmp
 //strnstr
