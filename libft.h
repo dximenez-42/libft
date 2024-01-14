@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:55:59 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/12 20:07:38 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/13 18:50:16 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t n);
 int		ft_atoi(const char *s);
 // void	*ft_calloc(size_t n, size_t size);
 // char	*ft_strdup(const char *s);
-// char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 // char	*ft_strjoin(char const *s1, char const *s2);
 // char	*ft_strtrim(char const *s1, char const *set);
 // char	**ft_split(char const *s, char c);
