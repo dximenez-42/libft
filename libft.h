@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:55:59 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/14 16:44:57 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/14 18:16:24 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int		ft_atoi(const char *s);
 // char	*ft_strdup(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
-// char	*ft_strtrim(char const *s1, char const *set);
+char	*ft_strtrim(char const *s1, char const *set);
 // char	**ft_split(char const *s, char c);
 // char	*ft_itoa(int n);
 // char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
