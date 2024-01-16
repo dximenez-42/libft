@@ -6,65 +6,51 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 18:16:39 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/15 14:45:00 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/16 16:53:42 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	strlen_custom(const char *s, const char *set)
+int	get_index(const char *s1, const char *set, int start)
 {
+	size_t	len;
 	size_t	i;
-	size_t	m;
-	size_t	c;
 
+	len = ft_strlen(s1);
 	i = 0;
-	m = 0;
-	c = 0;
-	while (s[i] != '\0')
+	while (i < len)
 	{
-		while (set[m] != '\0')
-		{
-			if (s[i] != set[m])
-				++c;
-			++m;
-		}
-		m = 0;
-		++i;
+		if (start && ft_strchr(set, s1[i]) == 0)
+			break ;
+		else if (!start && ft_strchr(set, s1[len - i - 1]) == 0)
+			break ;
+		i++;
 	}
-	return (c);
-}
-
-static int	set_contains_c(char const *set, char const c)
-{
-	while (*set != '\0')
-	{
-		if (*set == c)
-			return (1);
-		++set;
-	}
-	return (0);
+	if (start)
+		return (i);
+	else
+		return (len - i);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*mem;
-	size_t	i;
+	int		begin;
+	int		end;
 
-	mem = malloc((strlen_custom(s1, set) + 1) * sizeof(char));
-	if (!mem)
-		return (0);
-	i = 0;
-	while (*s1 != '\0')
-	{
-		if (!set_contains_c(set, *s1))
-		{
-			mem[i] = *s1;
-			++i;
-		}
-		++s1;
-	}
-	mem[i] = '\0';
+	if (s1 == NULL)
+		return (NULL);
+	if (set == NULL)
+		return (ft_strdup(s1));
+	begin = get_index(s1, set, 1);
+	end = get_index(s1, set, 0);
+	if (begin >= end)
+		return (ft_strdup(""));
+	mem = (char *)malloc(sizeof(char) * (end - begin + 1));
+	if (mem == NULL)
+		return (NULL);
+	ft_strlcpy(mem, s1 + begin, end - begin + 1);
 	return (mem);
 }
 
