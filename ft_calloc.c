@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:43:32 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/09 14:40:26 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/16 14:27:55 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,11 @@
 void	*ft_calloc(size_t n, size_t size)
 {
 	void	*mem;
-	size_t	i;
 
 	mem = malloc(n * size);
-	ft_bzero(mem, n);
+	if (mem == 0)
+		return (0);
+	ft_bzero(mem, n * size);
 	return (mem);
 }
 
