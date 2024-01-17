@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 18:16:39 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/16 16:53:42 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/17 19:58:37 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,23 @@
 
 int	get_index(const char *s1, const char *set, int start)
 {
-	size_t	len;
 	size_t	i;
+	size_t	size;
 
-	len = ft_strlen(s1);
 	i = 0;
-	while (i < len)
+	size = ft_strlen(s1);
+	while (s1[i] != '\0')
 	{
 		if (start && ft_strchr(set, s1[i]) == 0)
 			break ;
-		else if (!start && ft_strchr(set, s1[len - i - 1]) == 0)
+		else if (!start && ft_strchr(set, s1[size - i - 1]) == 0)
 			break ;
 		i++;
 	}
 	if (start)
 		return (i);
 	else
-		return (len - i);
+		return (size - i);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
@@ -39,17 +39,17 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		begin;
 	int		end;
 
-	if (s1 == NULL)
-		return (NULL);
-	if (set == NULL)
+	if (s1 == 0)
+		return (0);
+	if (set == 0)
 		return (ft_strdup(s1));
 	begin = get_index(s1, set, 1);
 	end = get_index(s1, set, 0);
 	if (begin >= end)
 		return (ft_strdup(""));
 	mem = (char *)malloc(sizeof(char) * (end - begin + 1));
-	if (mem == NULL)
-		return (NULL);
+	if (mem == 0)
+		return (0);
 	ft_strlcpy(mem, s1 + begin, end - begin + 1);
 	return (mem);
 }
