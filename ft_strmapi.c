@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 21:41:06 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/18 22:25:22 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/18 22:27:11 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,4 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	mem[i] = '\0';
 	return (mem);
-}
-
-int main()
-{
-	ft_strmapi();
 }
