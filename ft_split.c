@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 19:59:00 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/18 17:42:53 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/18 22:27:58 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,8 +98,9 @@ char	**ft_split(char const *s, char c)
 /*
 int	main(void)
 {
-	// char **s = ft_split("hello! ", ' ');
-	// // printf("%zu\n", count_words("HOLA QUE TAL", ' '));
-	// printf("{\"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\"}\n", s[0], s[1], s[2], s[3], s[4], s[5]);
+	char **s = ft_split("hello! ", ' ');
+	printf("%zu\n", count_words("HOLA QUE TAL", ' '));
+	printf("{\"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\"}\n",
+		s[0], s[1], s[2], s[3], s[4], s[5]);
 }
 */
