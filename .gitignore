@@ -2,3 +2,4 @@ a.out
 .vscode/
 *.o
 ft_split.dSYM/
+ft_itoa.dSYM/
