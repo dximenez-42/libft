@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 19:59:00 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/17 22:22:57 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/18 17:42:53 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,20 @@ char	*allocate_word(const char *s, size_t start, size_t end)
 	}
 	mem[i] = '\0';
 	return (mem);
+}
+
+char	**free_all(char	**mem, size_t size)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < size)
+	{
+		free((void *)mem[i]);
+		++i;
+	}
+	free(mem);
+	return (0);
 }
 
 size_t	count_words(char const *s, char del)
@@ -54,6 +68,7 @@ char	**ft_split(char const *s, char c)
 	size_t	index;
 	size_t	count;
 	size_t	start;
+	int		flag;
 
 	mem = malloc((count_words(s, c) + 1) * sizeof(char *));
 	if (mem == 0)
@@ -63,10 +78,17 @@ char	**ft_split(char const *s, char c)
 	count = 0;
 	while (index <= ft_strlen(s))
 	{
-		if (s[index] == c || index == ft_strlen(s))
+		if (s[index] != c && !flag)
 		{
-			mem[count++] = allocate_word(s, start, index);
-			start = index + 1;
+			start = index;
+			flag = 1;
+		}
+		else if ((s[index] == c || index == ft_strlen(s)) && flag)
+		{
+			mem[count] = allocate_word(s, start, index);
+			if (mem[count++] == 0)
+				return (free_all(mem, count_words(s, c)));
+			flag = 0;
 		}
 		++index;
 	}
@@ -76,7 +98,8 @@ char	**ft_split(char const *s, char c)
 /*
 int	main(void)
 {
-	// printf("%zu\n", count_words("HOLA QUE TAL", ' '));
-	printf("%s\n", ft_split("HOLA QUE TAL", ' ')[1]);
+	// char **s = ft_split("hello! ", ' ');
+	// // printf("%zu\n", count_words("HOLA QUE TAL", ' '));
+	// printf("{\"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\"}\n", s[0], s[1], s[2], s[3], s[4], s[5]);
 }
 */
