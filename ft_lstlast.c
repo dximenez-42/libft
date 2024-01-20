@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 19:22:24 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/19 19:41:46 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/20 21:07:15 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,11 @@ t_list *ft_lstlast(t_list *lst)
 	t_list	*current;
 
 	current = lst;
-	while (current->next != NULL)
+	while (current != 0)
 	{
+		if (current->next == 0)
+			return (current);
 		current = current->next;
 	}
-	return (current);
+	return (0);
 }
