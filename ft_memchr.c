@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 18:14:37 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/11 18:37:06 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/22 15:14:10 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,20 @@
  * Scans the initial n bytes
  * both c and the bytes of s are interpreted as unsigned char
 */
-void	*ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int ch, size_t n)
 {
-	size_t			i;
 	unsigned char	*str;
+	unsigned char	c;
+	size_t			i;
 
-	i = 0;
 	str = (unsigned char *)s;
-	while (*str == (unsigned char)c)
+	c = (unsigned char)ch;
+	i = 0;
+	while (i < n)
 	{
-		if (i == n - 1)
-			return (0);
-		i++;
-		str++;
+		if (str[i] == c)
+			return (str + i);
+		++i;
 	}
-	return (str);
+	return (0);
 }
