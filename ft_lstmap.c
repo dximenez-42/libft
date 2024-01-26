@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 17:43:57 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/21 19:22:34 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/26 14:24:22 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *new;
-	t_list *first;
+	t_list	*new;
+	t_list	*first;
 
 	if (lst == 0 || f == 0 || del == 0)
 		return (0);
