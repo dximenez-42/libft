@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 19:59:00 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/26 14:57:38 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/26 15:12:38 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,8 @@ char	**ft_split(char const *s, char c)
 	size_t	size;
 	size_t	i;
 
+	if (s == 0)
+		return (0);
 	mem = ft_calloc(count_words(s, c) + 1, sizeof(char *));
 	if (mem == 0)
 		return (0);
