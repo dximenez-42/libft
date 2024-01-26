@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 13:30:14 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/22 14:42:51 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/26 16:50:42 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,24 +25,28 @@ char	*ft_strrchr(const char *s, int ch)
 	{
 		if (str[i] == c)
 			return (str + i);
+		if (i == 0)
+			break ;
 		i--;
 	}
-	if (c == '\0')
-		return (str + i);
-	return (NULL);
+	return (0);
 }
 
-/*
-#include <string.h>
-int main()
-{
-	// printf("%s\n", strrchr("abcde", 'a'));
-	// printf("%s\n", strrchr("abcde", 'd'));
-	// printf("%s\n", strrchr("abcde", 'e'));
-	// printf("%s\n", strrchr("abcde", '\0'));
-	printf("%s\n", ft_strrchr("teste", 'e'));
-	printf("%s\n\n", strrchr("teste", 'e'));
+// int main()
+// {
+// 	const char *str = "hola que tal";
+// 	char *res = ft_strrchr(str, 's');
+// 	printf("%s\n", res);		// NULL
+// }
 
-	printf("%d\n", memcmp(ft_strrchr("teste", 'e'), strrchr("teste", 'e'), 20));
-}
-*/
+// int main()
+// {
+// 	char *str = "hola que tal";
+// 	printf("%s\n", ft_strrchr(str + 2, 'h'));		// NULL
+// }
+
+// int main()
+// {
+// 	char *str = "";
+// 	printf("%s\n", ft_strrchr(str, '\0'));		// \0
+// }
