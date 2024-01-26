@@ -6,25 +6,24 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 19:59:00 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/18 22:27:58 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/26 14:22:13 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*allocate_word(const char *s, size_t start, size_t end)
+char	*allocate_word(const char *s, size_t end)
 {
 	char	*mem;
 	size_t	i;
 
-	mem = malloc((end - start + 1) * sizeof(char));
+	mem = ft_calloc((end + 1), sizeof(char));
 	if (mem == 0)
 		return (0);
 	i = 0;
-	while (start < end)
+	while (i < end)
 	{
-		mem[i] = s[start];
-		++start;
+		mem[i] = s[i];
 		++i;
 	}
 	mem[i] = '\0';
@@ -62,45 +61,75 @@ size_t	count_words(char const *s, char del)
 	return (c + 1);
 }
 
+size_t	word_size(char const *s, char c)
+{
+	size_t	i;
+
+	i = 0;
+	while (s[i] != c && s[i] != '\0')
+		++i;
+	return (i);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**mem;
-	size_t	index;
-	size_t	count;
-	size_t	start;
-	int		flag;
+	size_t	size;
+	size_t	i;
 
-	mem = malloc((count_words(s, c) + 1) * sizeof(char *));
+	s = ft_strtrim(s, &c);
+	mem = ft_calloc(count_words(s, c) + 1, sizeof(char *));
+	// printf("allocated %zu words\n\n", count_words(s, c));	//
 	if (mem == 0)
 		return (0);
-	index = 0;
-	start = 0;
-	count = 0;
-	while (index <= ft_strlen(s))
+	i = 0;
+	while (count_words(s, c) > 0 && *s != '\0')
 	{
-		if (s[index] != c && !flag)
-		{
-			start = index;
-			flag = 1;
-		}
-		else if ((s[index] == c || index == ft_strlen(s)) && flag)
-		{
-			mem[count] = allocate_word(s, start, index);
-			if (mem[count++] == 0)
-				return (free_all(mem, count_words(s, c)));
-			flag = 0;
-		}
-		++index;
+		// printf("remaining words: %zu\n", count_words(s, c));	//
+		while (*s == c)
+			++s;
+		size = word_size(s, c);
+		mem[i] = allocate_word(s, size);
+		if (mem[i] == 0)
+			return (free_all(mem, count_words(s, c) + i));
+		// printf("-> '%s'\n", mem[i]);	//
+		s += size + 1;
+		++i;
 	}
 	return (mem);
 }
 
-/*
-int	main(void)
-{
-	char **s = ft_split("hello! ", ' ');
-	printf("%zu\n", count_words("HOLA QUE TAL", ' '));
-	printf("{\"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\"}\n",
-		s[0], s[1], s[2], s[3], s[4], s[5]);
-}
-*/
+// int	main(void)
+// {
+// 	char *str = "HOLA QUE TAL ESTAS";
+// 	char sep = ' ';
+// 	char **s = ft_split(str, sep);
+// }
+
+// int	main(void)
+// {
+// 	char *str = "0 0 0 0 0 0 0 0 0";
+// 	char sep = ' ';
+// 	char **s = ft_split(str, sep);
+// }
+
+// int	main(void)
+// {
+// 	char *str = "      split       this for   me  !       ";
+// 	char sep = ' ';
+// 	char **s = ft_split(str, sep);
+// }
+
+// int	main(void)
+// {
+// 	char *str = "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse";
+// 	char sep = ' ';
+// 	char **s = ft_split(str, sep);
+// }
+
+// int	main(void)
+// {
+// 	char *str = "hello!";
+// 	char sep = ' ';
+// 	char **s = ft_split(str, sep);
+// }
