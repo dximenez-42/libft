@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 12:51:18 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/19 13:05:56 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/26 15:20:20 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	size_t	i;
 	size_t	size;
 
+	if (s == 0)
+		return ;
 	i = 0;
 	size = ft_strlen(s);
 	while (i < size)

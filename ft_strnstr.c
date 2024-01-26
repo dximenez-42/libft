@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 19:02:33 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/12 19:53:32 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/26 15:22:51 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 	size_t	l;
 
 	b = 0;
+	if (big == 0 && n == 0)
+		return (0);
 	if (ft_strlen(little) == 0)
 		return ((char *)big);
 	while (big[b] != '\0' && b < n)

@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 13:09:24 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/19 13:11:08 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/26 15:19:47 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (s == 0)
+		return ;
 	while (*s != '\0')
 	{
 		write(fd, s, 1);
