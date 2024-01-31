@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 13:14:30 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/19 13:25:31 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 18:55:01 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,3 +40,12 @@ void	ft_putnbr_fd(int n, int fd)
 			write_num(n, fd);
 	}
 }
+
+/*
+int main()
+{
+	ft_putnbr_fd(-2147483648, 1);
+	ft_putnbr_fd(2147483647, 1);
+	ft_putnbr_fd(0, 1);
+}
+*/
