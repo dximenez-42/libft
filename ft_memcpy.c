@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:43:52 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/09 14:35:56 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 18:43:48 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,15 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-// int main()
-// {
-// 	ft_memcpy(((void *)0), ((void *)0), 3);
-// }
+/*
+int main()
+{
+	char	*mem;
+
+	mem = malloc(5 * sizeof(char));
+	ft_memcpy(mem, "HOLA\0", 5);
+	printf("%s\n", mem);
+
+	// ft_memcpy(((void *)0), ((void *)0), 3);
+}
+*/
