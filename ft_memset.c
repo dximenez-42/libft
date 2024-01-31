@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:43:57 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/09 14:35:56 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 19:22:23 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,6 @@ void	*ft_memset(void *s, int c, size_t n)
 }
 
 /*
-#include <string.h>
-#include <stdio.h>
 int main()
 {
 	char *str = (char*)malloc(5 * sizeof(char));

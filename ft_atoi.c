@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:42:26 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/09 14:40:47 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 19:21:51 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,6 @@ int	ft_atoi(const char *s)
 }
 
 /*
-#include <stdio.h>
-#include <stdlib.h>
 int main()
 {
 	printf("1, %d = %d\n", ft_atoi("0"), atoi("0"));

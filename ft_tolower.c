@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:44:03 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/09 13:44:04 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 19:21:43 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int	ft_tolower(int c)
 }
 
 /*
-#include <stdio.h>
 int main()
 {
 	printf("%c\n", ft_tolower('E'));

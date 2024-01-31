@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 19:55:51 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/13 17:55:18 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 19:22:16 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,6 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 }
 
 /*
-#include <stdio.h>
-#include <string.h>
-
 int main()
 {
 	printf("%d:%d\n", memcmp("abcdef", "abcde", 5),

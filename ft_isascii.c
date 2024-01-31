@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:43:43 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/09 13:51:14 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 19:22:05 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ int	ft_isascii(int c)
 }
 
 /*
-#include <stdio.h>
-#include <ctype.h>
 int main()
 {
 	char string[] = "0123456789ABCdefGHIjklMNOpqr

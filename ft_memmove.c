@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:43:55 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/09 15:24:53 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 19:22:20 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 }
 
 /*
-#include <unistd.h>
-#include <stdio.h>
 int main()
 {
 	char *src = "HOLA";

@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:43:50 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/09 13:52:03 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 19:22:12 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ int	ft_isprint(int c)
 }
 
 /*
-#include <stdio.h>
-#include <ctype.h>
 int main()
 {
 	char string[] = "0123456789ABCdefGHIjklMNOpqrSTUvwxYZ\t\v\r";

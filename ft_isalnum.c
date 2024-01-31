@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 19:44:55 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/09 13:55:46 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 19:21:59 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ int	ft_isalnum(int c)
 }
 
 /*
-#include <stdio.h>
-#include <ctype.h>
 int main()
 {
 	char string[] = "0123456789ABCdefGHIjklMNOpqrSTUvwxYZ!@#$%^&*()_+{}[]";

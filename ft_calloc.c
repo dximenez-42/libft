@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:43:32 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/16 14:27:55 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 19:21:55 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ void	*ft_calloc(size_t n, size_t size)
 }
 
 /*
-#include <stdio.h>
 int main()
 {
 	int *num = (int*)ft_calloc(5, sizeof(int));
