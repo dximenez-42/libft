@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:43:27 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/31 17:06:59 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 17:07:53 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
+/*
 int main()
 {
 	char *mem;
@@ -41,3 +42,5 @@ int main()
 	printf("%c\n", mem[3]);
 	printf("%c\n", mem[4]);
 }
+
+*/
