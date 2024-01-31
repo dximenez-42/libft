@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:44:01 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/09 14:35:56 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 19:22:26 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@ size_t	ft_strlen(const char *s)
 }
 
 /*
-#include <stdio.h>
-#include <string.h>
 int main()
 {
 	char str[] = "Hola";
