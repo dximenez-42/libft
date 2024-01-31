@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:43:59 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/16 14:24:15 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 18:57:17 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,6 @@ char	*ft_strdup(const char *s)
 }
 
 /*
-#include <string.h>
-#include <stdio.h>
 int main()
 {
 	char *s = strdup("Hola");
