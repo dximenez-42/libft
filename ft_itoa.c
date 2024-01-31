@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 18:21:51 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/18 21:30:34 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 17:08:58 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,7 @@ char	*ft_itoa(int n)
 int main()
 {
 	printf("%s\n", ft_itoa(-2147483648));
+	printf("%s\n", ft_itoa(2147483647));
 	printf("%s\n", ft_itoa(0));
 	// printf("%d\n", (999 / custom_pow(3)));
 }
