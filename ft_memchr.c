@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 18:14:37 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/22 15:14:10 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 18:40:39 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,12 @@ void	*ft_memchr(const void *s, int ch, size_t n)
 	}
 	return (0);
 }
+
+/*
+int main()
+{
+	printf("%s\n", (char *)ft_memchr("abcde\0", 'c', 6));
+	printf("%s\n", (char *)ft_memchr("abcde\0", 'a', 6));
+	printf("%s\n", (char *)ft_memchr("abcde\0", '\0', 6));
+}
+*/
