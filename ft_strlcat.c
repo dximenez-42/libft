@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 16:45:37 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/26 17:38:21 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 19:02:17 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,11 @@ size_t	ft_strlcat(char *dest, const char *src, size_t n)
 	return (result);
 }
 
-// int main()
-// {
-// 	char	dest[30] = "a\0";
-// 	ft_strlcat(dest, "lorem ipsum dolor sit amet", 0);
-// }
+/*
+int main()
+{
+	char	dest[30] = "lorem\0";
+	ft_strlcat(dest, " ipsum dolor sit amet", 10);
+	printf("%s\n", dest);
+}
+*/
