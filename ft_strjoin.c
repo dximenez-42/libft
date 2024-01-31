@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 16:51:55 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/26 15:18:51 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 18:59:54 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	*mem = '\0';
 	return (mem - size);
 }
+
+/*
+int main()
+{
+	printf("%s\n", ft_strjoin("hola", " que tal"));
+}
+*/
