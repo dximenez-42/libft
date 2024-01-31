@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:43:27 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/09 14:35:56 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 17:06:59 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,4 +22,22 @@ void	ft_bzero(void *s, size_t n)
 		((char *)s)[i] = 0;
 		i++;
 	}
+}
+
+int main()
+{
+	char *mem;
+
+	mem = malloc(5 * sizeof(int));
+	mem[0] = 'A';
+	mem[1] = 'B';
+	mem[2] = 'C';
+	mem[3] = 'D';
+	mem[4] = 'E';
+	ft_bzero(mem, 5);
+	printf("%c\n", mem[0]);
+	printf("%c\n", mem[1]);
+	printf("%c\n", mem[2]);
+	printf("%c\n", mem[3]);
+	printf("%c\n", mem[4]);
 }
