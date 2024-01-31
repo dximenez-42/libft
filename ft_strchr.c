@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 18:39:14 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/22 14:43:44 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 18:56:59 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ char	*ft_strchr(const char *s, int ch)
 }
 
 /*
-#include <string.h>
 int main()
 {
 	// printf("%s\n", strchr("abcde", 'a'));
