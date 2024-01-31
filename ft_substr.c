@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 18:29:31 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/26 18:07:45 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 19:21:18 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (mem);
 }
 
-// int main()
-// {
-// 	ft_substr("", 1, 1);
-// }
+/*
+int main()
+{
+	ft_substr("", 1, 1);
+}
+*/
