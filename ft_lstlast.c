@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 19:22:24 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/26 14:24:08 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/01/31 18:13:58 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,14 @@ t_list	*ft_lstlast(t_list *lst)
 	}
 	return (0);
 }
+
+/*
+int main()
+{
+	t_list *list = ft_lstnew("test1");
+	list->next = ft_lstnew("test2");
+
+	t_list *last = ft_lstlast(list);
+	printf("%s\n", (char *)last->content);
+}
+*/
