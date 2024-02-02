@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 17:43:57 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/26 14:24:22 by dximenez         ###   ########.fr       */
+/*   Updated: 2024/02/01 19:48:30 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		if (new == 0)
 		{
 			ft_lstclear(&first, del);
-			return (0);
+			return (first);
 		}
 		ft_lstadd_back(&first, new);
 		lst = lst->next;
