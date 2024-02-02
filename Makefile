@@ -1,8 +1,10 @@
 NAME = libft.a
+LIBNAME = libft.h
+
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
-SRCS = ft_isalpha.c \
+SRC = ft_isalpha.c \
        ft_isdigit.c \
        ft_isalnum.c \
        ft_isascii.c \
@@ -35,8 +37,11 @@ SRCS = ft_isalpha.c \
        ft_putchar_fd.c \
        ft_putstr_fd.c \
        ft_putendl_fd.c \
-       ft_putnbr_fd.c \
-       ft_lstnew.c \
+       ft_putnbr_fd.c
+
+OBJ = $(SRC:.c=.o)
+
+BONUSSRC = ft_lstnew.c \
        ft_lstadd_front.c \
        ft_lstsize.c \
        ft_lstlast.c \
@@ -44,20 +49,23 @@ SRCS = ft_isalpha.c \
        ft_lstdelone.c \
        ft_lstclear.c \
        ft_lstiter.c \
-       ft_lstmap.c \
+       ft_lstmap.c
 
-OBJS = $(SRCS:.c=.o)
-
-$(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
-
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+BONUSOBJ = $(BONUSSRC:.c=.o)
 
 all: $(NAME)
 
+$(NAME): $(OBJ) $(LIBNAME)
+	ar rcs $(NAME) $(OBJ)
+
+bonus: $(OBJ) $(BONUSOBJ) $(LIBNAME)
+	ar rcs $(NAME) $(BONUSOBJ) $(OBJ)
+
+# %.o: %.c
+# 	$(CC) $(CFLAGS) -c -o $@ $<
+
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJ) $(BONUSOBJ)
 
 fclean: clean
 	rm -f $(NAME)
