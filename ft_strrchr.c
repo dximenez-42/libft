@@ -6,7 +6,7 @@
 /*   By: dximenez <dximenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 13:30:14 by dximenez          #+#    #+#             */
-/*   Updated: 2024/01/31 19:20:26 by dximenez         ###   ########.fr       */
+/*   Updated: 2025/03/04 16:14:12 by dximenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *s, int ch)
 	str = (char *)s;
 	c = (char)ch;
 	i = ft_strlen(s);
-	while (i >= 0)
+	while (i > 0)
 	{
 		if (str[i] == c)
 			return (str + i);
